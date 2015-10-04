@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+.ennui {
+  margin: 100px auto;
+  padding: 0 15px;
+  max-width: 500px;
+}
+
+.word {
+  font-size: 4rem;
+  color: #333;
+}
+
+.pronunciation {
+  font-size: 2.5rem;
+  margin-top: 15px;
+}
+
+.part-of-speech {
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.definition {
+  margin-top: 15px;
+  line-height: 2;
+}
