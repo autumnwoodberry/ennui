@@ -1,11 +1,12 @@
-(function ($, root) {
+(function($) {
+  'use strict';
 
   if (!$) {
-    throw Error('jQuery is required.')
+    throw Error('jQuery is required.');
   }
 
   // Makes the given element cycle through rainbow colors!
-  function makeRainbow(element) {
+  function Rainbow(element) {
     var $element = $(element);
     var index = 0;
     var speed = $element.data('speed') || 1;
@@ -19,14 +20,15 @@
 
     // make sure the element has the right styles
     $element.css('transition', 'color ' + speed + 's');
-
-    // use setTimeout() or else the first color change will not be
-    // animated. https://www.youtube.com/watch?v=8aGhZQkoFbQ
     changeColor();
   }
 
-  $('[data-rainbow]').each(function (element) {
-    makeRainbow(element);
+  $(function() {
+
+    $('[data-rainbow]').each(function(index, element) {
+      new Rainbow(element);
+    });
+
   });
 
-})(this.jQuery, this);
+})(this.jQuery);
