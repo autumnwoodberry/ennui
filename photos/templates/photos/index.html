@@ -1,0 +1,28 @@
+{% extends 'shared/index.html' %}
+
+{% load staticfiles %}
+
+{% block stylesheets %}
+
+  <link rel="stylesheet" href="{% static 'photos/css/index.css' %}">
+
+{% endblock %}
+
+{% block body %}
+
+  <!-- photos! -->
+  <div class="photos">
+
+    <header>
+      <h1>Photos</h1>
+    </header>
+
+    <main>
+
+      photos go here.
+
+    </main>
+
+  </div>
+
+{% endblock %}
