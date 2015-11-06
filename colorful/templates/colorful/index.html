@@ -1,18 +1,14 @@
+{% extends 'shared/index.html' %}
+
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>ennui</title>
+{% block stylesheets %}
 
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="{% static 'colorful/css/index.css' %}">
 
-</head>
-<body>
+{% endblock %}
+
+{% block body %}
 
   <!-- Ennui! -->
   <div class="ennui">
@@ -29,9 +25,11 @@
     </header>
   </div>
 
-  <!-- Javascripts -->
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+{% endblock %}
+
+{% block javascripts %}
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="{% static 'colorful/js/index.js' %}"></script>
 
-</body>
-</html>
+{% endblock %}
