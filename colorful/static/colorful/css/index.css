@@ -24,6 +24,10 @@ body {
 .word {
   font-size: 4rem;
   color: #333;
+  animation-name: rainbow;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .pronunciation {
@@ -39,4 +43,19 @@ body {
 .definition {
   margin-top: 15px;
   line-height: 2;
+}
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  33% {
+    color: orange;
+  }
+  66% {
+    color: green;
+  }
+  100% {
+    color: indigo;
+  }
 }
