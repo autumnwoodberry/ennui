@@ -39,7 +39,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'colorful',
     'shared',
-    'photos',
 )
 
 MIDDLEWARE_CLASSES = (
