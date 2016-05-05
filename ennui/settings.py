@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'colorful',
     'shared',
+    'maze',
 )
 
 MIDDLEWARE_CLASSES = (

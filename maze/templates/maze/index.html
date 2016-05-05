@@ -1,0 +1,17 @@
+{% extends 'shared/index.html' %}
+
+{% load staticfiles %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{% static 'maze/css/index.css' %}">
+{% endblock %}
+
+{% block body %}
+  <div class="maze">
+    this is maze app.
+  </div>
+{% endblock %}
+
+{% block javascripts %}
+  <script src="{% static 'maze/js/index.js' %}"></script>
+{% endblock %}
